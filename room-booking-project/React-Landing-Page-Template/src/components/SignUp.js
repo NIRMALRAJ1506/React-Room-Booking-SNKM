@@ -9,7 +9,8 @@ const SignUp = () => {
     contact: '',
     email: '',
     username: '',
-    password: ''
+    password: '',
+    bookedrooms: []
   });
   const navigate = useNavigate()
 
@@ -50,7 +51,8 @@ const checkData=(event)=>{
             {
                 window.alert("Password must contain Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character");
                 return false;
-            }    
+            }  
+
 
             DbService.post("users",formData).then((res)=>{
               

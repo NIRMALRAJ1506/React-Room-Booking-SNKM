@@ -14,8 +14,9 @@ const SelectCity = () => {
   const {login,setLogin,showUserDashboard,setShowuserDashboard,showAdminDashboard,setShowadminDashboard} = useLogin()
   // Load data from localStorage on component mount
   const [cities,setCities] = useState([])
+  const [user,setUser]=useState()
   const navigate = useNavigate()
-      const [user,setUser]=useState()
+      const [userd,setUserd]=useState()
   const {id} = useParams()
 
 
@@ -27,7 +28,8 @@ const SelectCity = () => {
       
     
     DbService.getById("users",id).then((res)=>{
-      
+      console.log(res)
+      setUserd(res.data)
       setUser(res.data)
    
       
@@ -64,6 +66,7 @@ const SelectCity = () => {
   // Function to handle booking a room
   const handleBookRoomClick = (room) => {
     // addItem(room)
+    console.log(user)
     const alreadyExists = user.bookedrooms.find((rooms)=>rooms.id===room.id)
     if(!alreadyExists)
       {

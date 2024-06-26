@@ -12,6 +12,7 @@ import SelectedRooms from "../Pages/SelectedRooms";
 import HomeComp from "../Pages/HomeComp";
 import EditComponent from "../components/EditComponent";
 import WithLogin from "../components/WithLogin";
+import ViewComp from "../components/ViewComp";
 
 const router = createBrowserRouter([
   {
@@ -46,7 +47,12 @@ const router = createBrowserRouter([
      },{
       path:"home",
       element:<HomeComp/>
+     },
+     {
+      path:"view/:id",
+      element:<ViewComp/>
      }
+     
     ]
   },
   {

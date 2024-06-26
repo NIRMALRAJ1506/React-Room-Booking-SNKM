@@ -206,6 +206,18 @@ const UserDashBoard = () => {
               </IconButton>
             </DrawerHeader>
             <List>
+            <Box
+                sx={{ display: "flex", alignItems: "center", margin: "10px" }}
+              >
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={() => navigate("")}
+                  fullWidth
+                >
+                  Home
+                </Button>
+              </Box>
               <Box
                 sx={{ display: "flex", alignItems: "center", margin: "10px" }}
               >

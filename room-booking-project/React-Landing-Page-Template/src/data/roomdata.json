@@ -139,6 +139,13 @@
       "image": "https://www.bambootravel.co.uk/files/img_cache/53424/1400__1520526723_deluxe-room-cityview1.JPG?1520526746",
       "info": "Mystery Rooms is a challenging race against the clock where the sole motive is to get yourself out of a themed space before time kicks you! Imagine being locked in a thrill space with your team of 2-8 people and you have exact 60 minutes to use logic, find clues, unravel a mystery and prove the power of team work to conclude a mission.",
       "price": "50000"
+    },
+    {
+      "id": "6b4f",
+      "city": "Chennai",
+      "image": "https://th.bing.com/th/id/OIP.DLq-JfR7j5woPlMAuX6iGQHaE8?w=246&h=180&c=7&r=0&o=5&pid=1.7",
+      "info": "A suite room in Chennai typically offers spacious accommodation designed for comfort and luxury. It usually includes a separate living area and bedroom, providing ample space for relaxation and work. Suite rooms in Chennai hotels often feature modern amenities such as large beds, stylish furnishings, en-suite bathrooms with upscale toiletries, and sometimes, a dining area or kitchenette. Many suites also offer beautiful views of the city skyline or the sea, depending on the location of the hotel. They are ideal for travelers seeking extra space and enhanced privacy during their stay in Chennai.",
+      "price": "2500"
     }
   ],
   "bookedRooms": [
@@ -408,28 +415,28 @@
       "password": "User@2k1",
       "bookedrooms": [
         {
-          "id": "7fb2",
-          "city": "Mumbai",
-          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-1.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-          "info": " A room assigned to two people. May have one or more  beds.\nThe room size or area of Double Rooms are generally between 40 m² to 45 m².",
-          "booked": false,
-          "price": "3909"
-        },
-        {
-          "id": "9860",
-          "city": "Delhi",
-          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-4.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-          "info": "A room that can accommodate three persons and has been fitted with three twin beds, one double  bed and one twin  bed or two double beds.\nThe room size or area of Triple Rooms is generally between 45 m² to 65 m².",
-          "booked": false,
-          "price": "8379"
-        },
-        {
           "id": "6a82",
           "city": "Chennai",
           "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-4.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
           "info": "A room assigned to four people. May have two or more  beds.\nThe room size or area of Quad Rooms is generally between 70 m² to 85 m².\n\n",
           "booked": false,
           "price": "9237"
+        },
+        {
+          "id": "2093",
+          "city": "Chennai",
+          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-6.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
+          "info": "The most expensive room provided by a hotel. Usually, only one president suite is available in one single hotel property. Similar to the normal suites, a president suite always has one or more bedrooms and living spaces with a strong emphasis on grand in-room decoration, high-quality amenities and supplies, and tailor-made services (e.g. personal butler during the stay).",
+          "booked": false,
+          "price": "3894"
+        },
+        {
+          "id": "3281",
+          "city": "Chennai",
+          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-5.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
+          "info": "A room with a studio bed- a couch which can be converted into a  bed. May also have an additional  bed.\nThe room size or area of Studio room types are generally between 25 m² to 40 m².",
+          "booked": false,
+          "price": "3847"
         }
       ],
       "booked": true
@@ -560,6 +567,15 @@
       "email": "nirmal@gmail.com",
       "username": "nirmal",
       "password": "Nirmal@15"
+    },
+    {
+      "id": "c6b5",
+      "name": "samrutha",
+      "contact": "9876543220",
+      "email": "sam@gmail.com",
+      "username": "samik",
+      "password": "Samru@2k1",
+      "bookedrooms": []
     }
   ],
   "admins": [
