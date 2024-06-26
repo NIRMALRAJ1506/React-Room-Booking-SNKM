@@ -6,6 +6,7 @@
 # ScreenShots
 
 ##### Landing
+<img src="images/landingcarousel.png" alt="landing"/>
 ![landing](/images/landingcarousel.png)
 ![landing](/images/landinghome.png)
 ![landing](/images/landingservices.png)
