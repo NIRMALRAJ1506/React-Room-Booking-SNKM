@@ -4,38 +4,27 @@ import { useParams } from 'react-router-dom';
 import { useLogin } from '../components/LoginContext';
 import { Card, CardContent, CardMedia, Typography, CardActions, Button,Box } from '@mui/material';
 
-const SelectedRooms = () => {
+
+export const BookedRoomsComp = () => {
     const [bookedRooms,setBookedRooms]=useState([])
     const {id} = useParams()
     const {login,showUserDashboard,setShowuserDashboard} = useLogin()
     const [user,setUser]=useState()
 
     useEffect( ()=>{
-      DbService.getById("users",id).then((res)=>{
-        setBookedRooms(res.data.bookedrooms)
-        setUser(res.data)
-      })
+      
+        DbService.getById("users",id).then((res)=>{
+            setBookedRooms(res.data.bookedrooms)
+            setUser(res.data)
+          })
      
     },[])
 
-    const cancel =(ide)=>{
-      
-      const filtered = bookedRooms.filter((br)=>br.id!==ide)
-      setBookedRooms(filtered)
-
-      const modifiy = {
-        ...user,
-        bookedrooms:[...filtered]
-      }
-      DbService.update("users",id,modifiy).then((res)=>{
-        console.log(res)
-      })
-      window.alert('Room Cancelled ');
-
-    }
     
-    if(login && showUserDashboard)
-      {
+      
+      
+    
+    
 
     return (
   <div>
@@ -73,9 +62,7 @@ const SelectedRooms = () => {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" sx={{ color:"red"}}  onClick={()=>cancel(room.id)} >
-              Cancel
-            </Button>
+            
    
           </CardActions>
         </Card>
@@ -89,10 +76,7 @@ const SelectedRooms = () => {
     </div>
 
     )
-  }
-  else{
-    <></>
-  }
+  
 }
 
-export default SelectedRooms;
+

@@ -5,11 +5,13 @@ import { Navigate, useNavigate } from 'react-router-dom';
 
 
 const RoomAddComponent = () => {
+ 
     const [room, setRoom] = useState({
       city:"",
       image:"",
       info:"",
-      price:0
+      price:0,
+      bookeddate:""
     });
 
     const navigate=useNavigate()
@@ -32,7 +34,7 @@ const RoomAddComponent = () => {
 
   }
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="sm" sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
     <Box
       component="form"
       
@@ -44,6 +46,8 @@ const RoomAddComponent = () => {
         p: 3,
         boxShadow: 3,
         borderRadius: 2,
+        backgroundColor:"white"
+
       }}
       onSubmit={handleSubmit}
     >

@@ -66,22 +66,27 @@ const SelectCity = () => {
   // Function to handle booking a room
   const handleBookRoomClick = (room) => {
     // addItem(room)
+    const date=new Date();
+
     console.log(user)
+     room.bookeddate=date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear()
     const alreadyExists = user.bookedrooms.find((rooms)=>rooms.id===room.id)
     if(!alreadyExists)
       {
         const modifiy = {
           ...user,
-          bookedrooms:[...user.bookedrooms,room]
+          bookedrooms:[...user.bookedrooms,room],
         }
-       
+       console.log(modifiy,"modify")
         // setUser({...user,bookedrooms:[...bookedRooms]})
         // console.log(user)
         DbService.update("users",id,modifiy).then((res)=>{
           setUser(res.data)
-          
+          console.log(res.data)
         })
-        window.alert('Room Booked Successfully');
+        const roomfind=availableRooms.find((rooms)=>rooms.id===room.id)
+        roomfind.bookeddate=date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear()
+        window.alert(`Room Booked Successfully on ${date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear()}`);
       }
       else{
         window.alert('Already Booked ');
@@ -121,9 +126,24 @@ if(login && showUserDashboard)
         </select>
       </div>
       <Box display="flex" flexWrap="wrap" gap={2}>
+        {roomData.length>0 ? user.bookedrooms.forEach(element => {
+          availableRooms.map((room)=>{
+            if(element.id===room.id){
+              room.bookeddate=element.bookeddate
+            }
+            return room
+          })
+        }):""}
         {roomData.length>0 ? availableRooms.map(room => (
           
-          <Card key={room.id} sx={{ maxWidth: 345 }}>
+          <Card key={room.id}  sx={{
+            maxWidth: 345,
+            backgroundColor: "WHEAT",
+            transition: 'transform 0.3s',
+            '&:hover': {
+              transform: 'scale(1.05)',
+            },
+          }}>
           <CardMedia
             component="img"
             height="140"
@@ -132,14 +152,17 @@ if(login && showUserDashboard)
           />
           <CardContent>
            
-            <Typography variant="body1" color="text.secondary">
+            <Typography  sx={{ fontWeight : "600"}} color="text.secondary">
               {room.info}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography  sx={{ fontWeight : "800"}} color="text.secondary">
               {room.city}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {room.price}
+            &#x20b9; {room.price}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+            {room.bookeddate ? "Booked" : "Not Booked"}
             </Typography>
           </CardContent>
           <CardActions>

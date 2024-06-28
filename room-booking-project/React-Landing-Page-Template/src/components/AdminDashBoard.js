@@ -69,6 +69,8 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
       }),
       marginLeft: 0,
     }),
+    background: `url('/images/bgimage.jpg') no-repeat center center fixed`,
+    backgroundSize: 'cover',
   })
 );
 
@@ -87,6 +89,8 @@ const AppBar = styled(MuiAppBar, {
       duration: theme.transitions.duration.enteringScreen,
     }),
   }),
+  background: "linear-gradient(270deg, white -6%, rgb(35, 49, 71) 9%);"
+
 }));
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -99,13 +103,22 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 const AdminDashBoard = () => {
-  const logout = () => {
-    sessionStorage.clear();
-    setShowadminDashboard(false);
 
-    navigate("/landing");
-  };
   const navigate = useNavigate();
+  const logout = (event) => {
+    event.preventDefault();
+
+    sessionStorage.clear();
+    if(window.confirm("Are you sure to Logout ?")){
+      setShowadminDashboard(false);
+
+      navigate("/landing");
+
+      }
+      
+    
+  };
+
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
   const {
@@ -124,9 +137,7 @@ const AdminDashBoard = () => {
       setShowuserDashboard(false);
       setShowadminDashboard(true);
     }
-    if (!showAdminDashboard) {
-      navigate("/login");
-    }
+    
   }, []);
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -136,7 +147,7 @@ const AdminDashBoard = () => {
     setOpen(false);
   };
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex" ,  background: "linear-gradient(270deg, white -6%, rgb(35, 49, 71) 9%);"}}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
         <Toolbar>
@@ -172,11 +183,15 @@ const AdminDashBoard = () => {
       </AppBar>
       <Drawer
         sx={{
+          background: "linear-gradient(270deg, white -6%, rgb(35, 49, 71) 9%);",
+
           width: drawerWidth,
           flexShrink: 0,
           "& .MuiDrawer-paper": {
             width: drawerWidth,
             boxSizing: "border-box",
+            background: "linear-gradient(270deg, white -6%, rgb(35, 49, 71) 9%)",
+
           },
         }}
         variant="persistent"
@@ -193,7 +208,7 @@ const AdminDashBoard = () => {
           </IconButton>
         </DrawerHeader>
         <List>
-          <Box sx={{ display: "flex", alignItems: "center",margin:"10px" }}>
+          <Box sx={{ display: "flex", alignItems: "center",margin:"10px" }} >
             <Button
               variant="contained"
               color="primary"

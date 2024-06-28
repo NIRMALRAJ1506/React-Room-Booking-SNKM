@@ -21,6 +21,20 @@ const SignUp = () => {
     }
 const checkData=(event)=>{
     event.preventDefault();
+    if(formData.name.trim()==="")
+      {
+          window.alert("Name is Required")
+          return false
+      }
+      if (formData.name.trim().match(/[a-zA-Z]/) && formData.name.trim().match(/[0-9]/)) {
+        window.alert("Name must not contain both letters and numbers.");
+        return false;
+    }
+    
+    if (!formData.name.trim().match('^[a-zA-Z]{3,20}$')) {
+        window.alert("Name must contain only letters with a length between 3 and 20 characters.");
+        return false;
+    }
     if(!formData.contact.trim().match('^[0-9]{10}$'))
         {
             window.alert("Contact Number Must Be (0-9) and 10 digit");
@@ -57,7 +71,7 @@ const checkData=(event)=>{
             DbService.post("users",formData).then((res)=>{
               
             })
-
+            window.alert("User Registeration Successful!!!")
         
         // window.alert(JSON.stringify(formData)); 
         navigate("/login") 
@@ -76,7 +90,6 @@ const checkData=(event)=>{
             name="name"
             value={formData.name}
             onChange={inputChangeHandler}
-            required
           />
         </div>
         <div className="form-group">
@@ -87,7 +100,6 @@ const checkData=(event)=>{
             name="contact"
             value={formData.contact}
             onChange={inputChangeHandler}
-            required
           />
         </div>
         <div className="form-group">
@@ -98,7 +110,6 @@ const checkData=(event)=>{
             name="email"
             value={formData.email}
             onChange={inputChangeHandler}
-            required
           />
         </div>
         <div className="form-group">
@@ -109,7 +120,6 @@ const checkData=(event)=>{
             name="username"
             value={formData.username}
             onChange={inputChangeHandler}
-            required
           />
         </div>
         <div className="form-group">
@@ -120,7 +130,6 @@ const checkData=(event)=>{
             name="password"
             value={formData.password}
             onChange={inputChangeHandler}
-            required
           />
         </div>
         <button type="submit">Sign Up</button>

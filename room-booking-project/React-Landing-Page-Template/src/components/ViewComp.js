@@ -84,10 +84,16 @@ if(login && showUserDashboard)
     console.log(roomData)
   return (
    
-      <Box display="flex" flexWrap="wrap" gap={2}>
+      <Box display="flex" flexWrap="wrap" gap={2} sx={{height:"100vh"}}>
         {roomData ? 
           
-          <Card key={roomData.id} sx={{ maxWidth: 345 }}>
+          <Card key={roomData.id} sx={{ maxWidth: 345,maxHeight:500,
+            backgroundColor: "WHEAT",
+            transition: 'transform 0.3s',
+            '&:hover': {
+              transform: 'scale(1.05)',
+            },
+           }}>
           <CardMedia
             component="img"
             height="140"
@@ -96,14 +102,14 @@ if(login && showUserDashboard)
           />
           <CardContent>
            
-            <Typography variant="body1" color="text.secondary">
+            <Typography sx={{ fontWeight : "600"}} color="text.secondary">
               {roomData[0].info}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography sx={{ fontWeight : "800"}} color="text.secondary">
               {roomData[0].city}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {roomData[0].price}
+            &#x20b9; {roomData[0].price}
             </Typography>
           </CardContent>
           <CardActions>

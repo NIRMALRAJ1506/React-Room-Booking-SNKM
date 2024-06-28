@@ -49,7 +49,7 @@ const EditComponent = () => {
       };
      
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="sm" sx={{ height: "100vh", display: "flex", flexDirection: "column" }}>
     <Box
       component="form"
       onSubmit={handleSubmit}
@@ -61,6 +61,7 @@ const EditComponent = () => {
         p: 3,
         boxShadow: 3,
         borderRadius: 2,
+        backgroundColor:"white"
       }}
     >
       <Typography variant="h5" component="h2" textAlign="center" mb={3}>

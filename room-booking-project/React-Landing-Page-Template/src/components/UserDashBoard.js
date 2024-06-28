@@ -85,6 +85,8 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
       }),
       marginLeft: 0,
     }),
+    background: `url('/images/bgimage.jpg') no-repeat center center fixed`,
+    backgroundSize: 'cover',
   })
 );
 
@@ -101,8 +103,11 @@ const AppBar = styled(MuiAppBar, {
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
+
     }),
   }),
+  background: "linear-gradient(270deg, white -6%, rgb(35, 49, 71) 9%);"
+
 }));
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -112,6 +117,8 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   // necessary for content to be below app bar
   ...theme.mixins.toolbar,
   justifyContent: "flex-end",
+
+
 }));
 const UserDashBoard = () => {
   const navigate = useNavigate();
@@ -136,11 +143,15 @@ const UserDashBoard = () => {
   const handleDrawerOpen = () => {
     setOpen(true);
   };
-  const logout = () => {
-    setShowuserDashboard(false);
-    sessionStorage.clear("user");
+  const logout = (event) => {
+    event.preventDefault();
 
-    navigate("/landing");
+    sessionStorage.clear();
+    if(window.confirm("Are you sure to Logout ?")){
+      setShowuserDashboard(false);
+      navigate("/landing");
+
+      }
   };
   const handleDrawerClose = () => {
     setOpen(false);
@@ -148,7 +159,8 @@ const UserDashBoard = () => {
   if (login && showUserDashboard) {
     return (
       <>
-        <Box sx={{ display: "flex" }}>
+        <Box sx={{ display: "flex" ,  background: "linear-gradient(270deg, white -6%, rgb(35, 49, 71) 9%);"
+}}>
           <CssBaseline />
           <AppBar position="fixed" open={open}>
             <Toolbar>
@@ -185,11 +197,14 @@ const UserDashBoard = () => {
           </AppBar>
           <Drawer
             sx={{
+              background: "linear-gradient(270deg, white -6%, rgb(35, 49, 71) 9%);",
               width: drawerWidth,
               flexShrink: 0,
               "& .MuiDrawer-paper": {
                 width: drawerWidth,
                 boxSizing: "border-box",
+                background: "linear-gradient(270deg, white -6%, rgb(35, 49, 71) 9%)",
+
               },
             }}
             variant="persistent"
@@ -207,7 +222,9 @@ const UserDashBoard = () => {
             </DrawerHeader>
             <List>
             <Box
-                sx={{ display: "flex", alignItems: "center", margin: "10px" }}
+                sx={{ display: "flex", alignItems: "center", margin: "10px" 
+                  ,background:"transparent"
+                }}
               >
                 <Button
                   variant="contained"

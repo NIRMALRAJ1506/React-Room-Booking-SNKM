@@ -13,6 +13,8 @@ import HomeComp from "../Pages/HomeComp";
 import EditComponent from "../components/EditComponent";
 import WithLogin from "../components/WithLogin";
 import ViewComp from "../components/ViewComp";
+import NotFoundComponent from "../components/NotFoundComponent";
+import { BookedRoomsComp } from "../components/BookedRoomsComp";
 
 const router = createBrowserRouter([
   {
@@ -67,7 +69,12 @@ const router = createBrowserRouter([
 
 
 
-    },{
+    },
+    {
+      path:"bookedrooms/:id",
+      element:<BookedRoomsComp/>
+    },
+    {
       path:"",
       element:<Navigate to="editandupdate"/>
     }
@@ -86,6 +93,10 @@ const router = createBrowserRouter([
   },{
     path:"landing",
     element: <App/>
+  }
+  ,{
+    path:"*",
+    element:<NotFoundComponent/>
   }
 
 ]);

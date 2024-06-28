@@ -10,6 +10,7 @@ const CardComponent = ({ image, city,info,price,id,setCards}) => {
   const navigate = useNavigate()
   
   const onDelete =(event)=>{
+    if(window.confirm("Are You Sure You want to delete this room?")){
     DbService.delete("rooms",id).then((res)=>{
       window.alert("deleted")
       
@@ -19,7 +20,7 @@ const CardComponent = ({ image, city,info,price,id,setCards}) => {
     setCards(res.data)
     })
   }
-
+  }
   const onEdit =()=>{
     navigate(`/admindashboard/edit/${id}`)
   }
@@ -29,7 +30,14 @@ const CardComponent = ({ image, city,info,price,id,setCards}) => {
     
     return ( 
       
-      <Card sx={{ maxWidth: 345 }}>
+      <Card  sx={{
+        maxWidth: 345,
+        backgroundColor: "WHEAT",
+        transition: 'transform 0.3s',
+        '&:hover': {
+          transform: 'scale(1.05)',
+        },
+      }}>
         <CardMedia
           component="img"
           height="140"
@@ -38,14 +46,14 @@ const CardComponent = ({ image, city,info,price,id,setCards}) => {
         />
         <CardContent>
          
-          <Typography variant="body1" color="text.secondary">
+          <Typography  sx={{ fontWeight : "600"}} color="text.secondary">
             {info}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography  sx={{ fontWeight : "800"}} color="text.secondary">
             {city}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {price}
+          &#x20b9;{price}
           </Typography>
         </CardContent>
         <CardActions>

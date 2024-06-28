@@ -15,20 +15,13 @@
   ],
   "rooms": [
     {
-      "id": "7fb2",
-      "city": "Mumbai",
-      "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-1.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-      "info": " A room assigned to two people. May have one or more  beds.\nThe room size or area of Double Rooms are generally between 40 m² to 45 m².",
-      "booked": false,
-      "price": "3909"
-    },
-    {
       "id": "9860",
       "city": "Delhi",
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-4.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": "A room that can accommodate three persons and has been fitted with three twin beds, one double  bed and one twin  bed or two double beds.\nThe room size or area of Triple Rooms is generally between 45 m² to 65 m².",
       "booked": false,
-      "price": "8379"
+      "price": "8379",
+      "bookeddate": ""
     },
     {
       "id": "6a82",
@@ -36,7 +29,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-4.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": "A room assigned to four people. May have two or more  beds.\nThe room size or area of Quad Rooms is generally between 70 m² to 85 m².\n\n",
       "booked": false,
-      "price": "9237"
+      "price": "9237",
+      "bookeddate": ""
     },
     {
       "id": "247b",
@@ -44,7 +38,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-3.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": "A room with a queen-sized bed. May be occupied by one or more people.\nThe room size or area of Queen Rooms is generally between 32 m² to 50 m².\n\n",
       "booked": false,
-      "price": "7392"
+      "price": "7392",
+      "bookeddate": ""
     },
     {
       "id": "d648",
@@ -52,7 +47,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-7.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": " A room with a king-sized bed. May be occupied by one or more people.\nThe room size or area of King Rooms is generally between 32 m² to 50 m².",
       "booked": false,
-      "price": "8373"
+      "price": "8373",
+      "bookeddate": ""
     },
     {
       "id": "afc1",
@@ -60,7 +56,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-17.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": "A room with two twin  beds. May be occupied by one or more people.\nThe room size or area of Twin Rooms is generally between 32 m² to 40 m²",
       "booked": false,
-      "price": "6436"
+      "price": "6436",
+      "bookeddate": ""
     },
     {
       "id": "b15f",
@@ -68,7 +65,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-11.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": "A Room with two double ( or perhaps queen) beds. And can accommodate two to four persons with two twin, double or queen-size  beds.\nThe room size or area of Double-double / Double Twin rooms is generally between 50 m² to 70 m².",
       "booked": false,
-      "price": "9383"
+      "price": "9383",
+      "bookeddate": ""
     },
     {
       "id": "51bc",
@@ -76,7 +74,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-8.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": " A room located on the ‘executive floor’ which enables convenient access to the executive lounge. Besides, some hotels also provide ‘female executive floors’ with their rooms assigned to female guests only due to safety and security reasons.",
       "booked": false,
-      "price": "2383"
+      "price": "2383",
+      "bookeddate": ""
     },
     {
       "id": "2093",
@@ -84,7 +83,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-6.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": "The most expensive room provided by a hotel. Usually, only one president suite is available in one single hotel property. Similar to the normal suites, a president suite always has one or more bedrooms and living spaces with a strong emphasis on grand in-room decoration, high-quality amenities and supplies, and tailor-made services (e.g. personal butler during the stay).",
       "booked": false,
-      "price": "3894"
+      "price": "3894",
+      "bookeddate": ""
     },
     {
       "id": "3281",
@@ -92,7 +92,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-5.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": "A room with a studio bed- a couch which can be converted into a  bed. May also have an additional  bed.\nThe room size or area of Studio room types are generally between 25 m² to 40 m².",
       "booked": false,
-      "price": "3847"
+      "price": "3847",
+      "bookeddate": ""
     },
     {
       "id": "c193",
@@ -100,7 +101,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-20.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": "This room type can be found in service apartments and hotels which target for long-stay guests. Open kitchens, cooking equipment, dryer, washer etc. are usually available in the room. Housekeeping services are only provided once in a week or two times in a week.\nThe room size or area of Serviced Apartments is generally between 96 m² to 250 m².",
       "booked": false,
-      "price": "8765"
+      "price": "8765",
+      "bookeddate": ""
     },
     {
       "id": "1b05",
@@ -108,7 +110,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-12.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": " A room that is fitted with a sofa  bed or a Murphy bed (i.e. a  bed that folds out of a wall or closet) which can be transformed from a bedroom in the nighttime to a living room in the daytime.\nThe room size or area of Murphy Room Types are generally between 20 m² to 40 m².",
       "booked": false,
-      "price": "9384"
+      "price": "9384",
+      "bookeddate": ""
     },
     {
       "id": "a6c2",
@@ -116,7 +119,8 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-16.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": "This room type is mainly designed for disabled guests and it is required by law that hotels must provide a certain number of accessible rooms to avoid discrimination.",
       "booked": false,
-      "price": "2838"
+      "price": "2838",
+      "bookeddate": ""
     },
     {
       "id": "cba5",
@@ -124,28 +128,32 @@
       "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-15.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
       "info": " This type of room is always adjoining to the  swimming pool pool or has a private  pool attached to the room.\n\nThe room size or area of Cabana Room Types is generally between 30 m² to 45 m².",
       "booked": false,
-      "price": "3848"
-    },
-    {
-      "id": "dd84",
-      "city": "Chennai",
-      "image": "https://www.nawy.com/blog/wp-content/uploads/2022/07/small-room-design.jpg",
-      "info": "A small room design depends on what’s the room’s purpose, as you will never have the same layout for both living room and bedrooms. However there are some general tips that can be implemented in numerous rooms such as\nAdd lots of shelves to store your belongings and some decorative elements\nHang only one art piece in your wall as a focal point\n",
-      "price": "6789"
+      "price": "3848",
+      "bookeddate": ""
     },
     {
       "id": "0b93",
       "city": "Chennai",
       "image": "https://www.bambootravel.co.uk/files/img_cache/53424/1400__1520526723_deluxe-room-cityview1.JPG?1520526746",
       "info": "Mystery Rooms is a challenging race against the clock where the sole motive is to get yourself out of a themed space before time kicks you! Imagine being locked in a thrill space with your team of 2-8 people and you have exact 60 minutes to use logic, find clues, unravel a mystery and prove the power of team work to conclude a mission.",
-      "price": "50000"
+      "price": "50000",
+      "bookeddate": ""
     },
     {
       "id": "6b4f",
       "city": "Chennai",
       "image": "https://th.bing.com/th/id/OIP.DLq-JfR7j5woPlMAuX6iGQHaE8?w=246&h=180&c=7&r=0&o=5&pid=1.7",
       "info": "A suite room in Chennai typically offers spacious accommodation designed for comfort and luxury. It usually includes a separate living area and bedroom, providing ample space for relaxation and work. Suite rooms in Chennai hotels often feature modern amenities such as large beds, stylish furnishings, en-suite bathrooms with upscale toiletries, and sometimes, a dining area or kitchenette. Many suites also offer beautiful views of the city skyline or the sea, depending on the location of the hotel. They are ideal for travelers seeking extra space and enhanced privacy during their stay in Chennai.",
-      "price": "2500"
+      "price": "2500",
+      "bookeddate": ""
+    },
+    {
+      "id": "9769",
+      "city": "Mumbai",
+      "image": "https://cache.marriott.com/marriottassets/marriott/BOMXR/bomxr-deluxe-room-9857-hor-clsc.jpg?interpolation=progressive-bilinear&",
+      "info": "Luxury hotels in areas like South Mumbai (Colaba, Nariman Point) offer spacious rooms with elegant decor, premium amenities such as high-speed internet, flat-screen TVs, and luxurious bedding. These hotels often provide panoramic views of the Arabian Sea or the city skyline, along with facilities like fine dining restaurants, spa services, and gym.",
+      "price": "4500",
+      "bookeddate": ""
     }
   ],
   "bookedRooms": [
@@ -415,31 +423,44 @@
       "password": "User@2k1",
       "bookedrooms": [
         {
+          "id": "9860",
+          "city": "Delhi",
+          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-4.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
+          "info": "A room that can accommodate three persons and has been fitted with three twin beds, one double  bed and one twin  bed or two double beds.\nThe room size or area of Triple Rooms is generally between 45 m² to 65 m².",
+          "booked": false,
+          "price": "8379",
+          "bookeddate": "28/6/2024"
+        },
+        {
           "id": "6a82",
           "city": "Chennai",
           "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-4.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
           "info": "A room assigned to four people. May have two or more  beds.\nThe room size or area of Quad Rooms is generally between 70 m² to 85 m².\n\n",
           "booked": false,
-          "price": "9237"
+          "price": "9237",
+          "bookeddate": "28/6/2024"
         },
         {
-          "id": "2093",
-          "city": "Chennai",
-          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-6.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-          "info": "The most expensive room provided by a hotel. Usually, only one president suite is available in one single hotel property. Similar to the normal suites, a president suite always has one or more bedrooms and living spaces with a strong emphasis on grand in-room decoration, high-quality amenities and supplies, and tailor-made services (e.g. personal butler during the stay).",
+          "id": "247b",
+          "city": "Mumbai",
+          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-3.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
+          "info": "A room with a queen-sized bed. May be occupied by one or more people.\nThe room size or area of Queen Rooms is generally between 32 m² to 50 m².\n\n",
           "booked": false,
-          "price": "3894"
+          "price": "7392",
+          "bookeddate": "28/6/2024"
         },
         {
-          "id": "3281",
-          "city": "Chennai",
-          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-5.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-          "info": "A room with a studio bed- a couch which can be converted into a  bed. May also have an additional  bed.\nThe room size or area of Studio room types are generally between 25 m² to 40 m².",
+          "id": "d648",
+          "city": "Delhi",
+          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-7.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
+          "info": " A room with a king-sized bed. May be occupied by one or more people.\nThe room size or area of King Rooms is generally between 32 m² to 50 m².",
           "booked": false,
-          "price": "3847"
+          "price": "8373",
+          "bookeddate": "28/6/2024"
         }
       ],
-      "booked": true
+      "booked": true,
+      "bookeddate": "28/6/2024"
     },
     {
       "id": "2",
@@ -448,90 +469,33 @@
       "username": "user2",
       "email": "user2",
       "password": "User@2k1",
-      "bookedrooms": []
-    },
-    {
-      "id": "0eb9",
-      "name": "dsd",
-      "contact": "9176071379",
-      "email": "sanjai@gmail.com",
-      "username": "dssss",
-      "password": "Sanjai@2k1",
       "bookedrooms": [
-        {
-          "id": "1ce7",
-          "city": "Chennai",
-          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-          "info": " Room assigned to one person. May have one or more  beds.\nThe room size or area of Single Rooms is generally between 37 m² to 45 m²",
-          "booked": false,
-          "price": "3000"
-        },
-        {
-          "id": "7fb2",
-          "city": "Mumbai",
-          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-1.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-          "info": " A room assigned to two people. May have one or more  beds.\nThe room size or area of Double Rooms are generally between 40 m² to 45 m².",
-          "booked": false,
-          "price": "3909"
-        },
-        {
-          "id": "1ce7",
-          "city": "Chennai",
-          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-          "info": " Room assigned to one person. May have one or more  beds.\nThe room size or area of Single Rooms is generally between 37 m² to 45 m²",
-          "booked": false,
-          "price": "3000"
-        },
-        {
-          "id": "7fb2",
-          "city": "Mumbai",
-          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-1.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-          "info": " A room assigned to two people. May have one or more  beds.\nThe room size or area of Double Rooms are generally between 40 m² to 45 m².",
-          "booked": false,
-          "price": "3909"
-        }
-      ]
-    },
-    {
-      "id": "a107",
-      "name": "dsd",
-      "contact": "9176071379",
-      "email": "sanjai@gmail.com",
-      "username": "dssss",
-      "password": "Sanjai@2k1",
-      "bookedrooms": []
-    },
-    {
-      "id": "211a",
-      "name": "saddd",
-      "contact": "9457432145",
-      "email": "ssssaa@gmail.com",
-      "username": "sdffds",
-      "password": "Sanjai@2k1",
-      "bookedrooms": [
-        {
-          "id": "1ce7",
-          "city": "Chennai",
-          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-          "info": " Room assigned to one person. May have one or more  beds.\nThe room size or area of Single Rooms is generally between 37 m² to 45 m²",
-          "booked": false,
-          "price": "3000"
-        },
-        {
-          "id": "7fb2",
-          "city": "Mumbai",
-          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-1.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
-          "info": " A room assigned to two people. May have one or more  beds.\nThe room size or area of Double Rooms are generally between 40 m² to 45 m².",
-          "booked": false,
-          "price": "3909"
-        },
         {
           "id": "9860",
           "city": "Delhi",
           "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-4.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
           "info": "A room that can accommodate three persons and has been fitted with three twin beds, one double  bed and one twin  bed or two double beds.\nThe room size or area of Triple Rooms is generally between 45 m² to 65 m².",
           "booked": false,
-          "price": "8379"
+          "price": "8379",
+          "bookeddate": "28/6/2024"
+        },
+        {
+          "id": "6a82",
+          "city": "Chennai",
+          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-4.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
+          "info": "A room assigned to four people. May have two or more  beds.\nThe room size or area of Quad Rooms is generally between 70 m² to 85 m².\n\n",
+          "booked": false,
+          "price": "9237",
+          "bookeddate": "28/6/2024"
+        },
+        {
+          "id": "247b",
+          "city": "Mumbai",
+          "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-3.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
+          "info": "A room with a queen-sized bed. May be occupied by one or more people.\nThe room size or area of Queen Rooms is generally between 32 m² to 50 m².\n\n",
+          "booked": false,
+          "price": "7392",
+          "bookeddate": "28/6/2024"
         },
         {
           "id": "d648",
@@ -539,39 +503,15 @@
           "image": "https://setupmyhotel.com/wp-content/uploads/2024/01/image-7.webp?ezimgfmt=rs:300x250/rscb339/ng:webp/ngcb338",
           "info": " A room with a king-sized bed. May be occupied by one or more people.\nThe room size or area of King Rooms is generally between 32 m² to 50 m².",
           "booked": false,
-          "price": "8373"
+          "price": "8373",
+          "bookeddate": "28/6/2024"
         }
       ]
     },
     {
-      "id": "a635",
-      "name": "fddfsgfgsf",
-      "contact": "6578943215",
-      "email": "sadf@gmail.com",
-      "username": "cxdfsdf",
-      "password": "Sanjai@2k1",
-      "bookedrooms": []
-    },
-    {
-      "id": "2c03",
-      "name": "Nirmal Raj",
-      "contact": "7550064411",
-      "email": "nirmalraj75500@gmail.com",
-      "username": "loros",
-      "password": "Kamal@90789"
-    },
-    {
-      "id": "977b",
-      "name": "Nirmalraj S",
-      "contact": "9876543210",
-      "email": "nirmal@gmail.com",
-      "username": "nirmal",
-      "password": "Nirmal@15"
-    },
-    {
-      "id": "c6b5",
+      "id": "ed6e",
       "name": "samrutha",
-      "contact": "9876543220",
+      "contact": "9876543210",
       "email": "sam@gmail.com",
       "username": "samik",
       "password": "Samru@2k1",
@@ -598,6 +538,22 @@
       "name": "kamalesh",
       "password": "kamalesh@2k1",
       "id": "8b5d"
+    }
+  ],
+  "contact": [
+    {
+      "id": "fc9f",
+      "name": "Nirmal Raj",
+      "phone": "7550064411",
+      "email": "nirmalraj75500@gmail.com",
+      "query": "bjhjghbbbhj"
+    },
+    {
+      "id": "b817",
+      "name": "Nirmal Raj",
+      "phone": "7550064411",
+      "email": "nirmalraj75500@gmail.com",
+      "query": "Very nice website user interface is very nice"
     }
   ]
 }

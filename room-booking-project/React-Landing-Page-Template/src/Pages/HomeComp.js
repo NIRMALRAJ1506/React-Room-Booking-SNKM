@@ -129,7 +129,14 @@ if(login && showUserDashboard)
       <Box display="flex" flexWrap="wrap" gap={2}>
         {roomData.length>0 ? availableRooms.map(room => (
           
-          <Card key={room.id} sx={{ maxWidth: 345 }}>
+          <Card key={room.id}  sx={{
+            maxWidth: 345,
+            backgroundColor: "WHEAT",
+            transition: 'transform 0.3s',
+            '&:hover': {
+              transform: 'scale(1.05)',
+            },
+          }}>
           <CardMedia
             component="img"
             height="140"
@@ -138,14 +145,14 @@ if(login && showUserDashboard)
           />
           <CardContent>
            
-            <Typography variant="body1" color="text.secondary">
+            <Typography sx={{ fontWeight : "600"}} color="text.secondary">
               {room.info}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography sx={{ fontWeight : "800"}} color="text.secondary">
               {room.city}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {room.price}
+            &#x20b9; {room.price}
             </Typography>
           </CardContent>
           <CardActions>
